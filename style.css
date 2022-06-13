@@ -8,7 +8,7 @@
 }
 
 html, body {
-    height: 100vh;
+    /* height: 100vh; */
     font-family:'Source Sans Pro', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing:antialiased;
@@ -17,7 +17,7 @@ html, body {
 /*HEADER*/
 
 header {
-    background-color: #0080ed;
+    background-color: #064685;
 }
 
 header .container{
@@ -54,7 +54,234 @@ header .container img {
     height:18px;
 }
 
+
 /*MAIN*/
 main {
     margin-bottom: 100px;
+}
+
+main .container-main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    max-width: 980px;
+    margin:100px auto 0px auto;
+
+}
+
+h2 {
+    color: rgb(0,0,0);
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    color: rgb(131,131,131);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 380px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border:2px solid #064685;
+}
+
+form [type="submit"] {
+    background-color: #064685;
+    color: white;
+}
+
+form [type="submit"]:hover {
+    cursor:pointer;
+}
+
+main .container-main img {
+    width: 550px;
+    box-shadow: 6px 6px 2px 1px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+/*CARDS*/
+
+.cards{
+    width:90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:20px;
+}
+
+.text--medium{
+    font-size:16px;
+    line-height:26px;
+    font-weight: 400;
+    color:rgb(53, 53, 53);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -4px #000000;
+    transition:all 0.3s ease 0s;
+}
+
+.card:hover{
+    transform: translateY(-7px);
+}
+
+.image1, .image2, .image3, .image4{
+    width:100%;
+    padding-top:56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image1 img {
+    position: absolute;
+    border-radius: 10px;
+    top:50%;
+    left:50%;
+    transform:translate(-25%,-32%);
+}
+
+.image2 img {
+    position: absolute;
+    border-radius: 10px;
+    top:50%;
+    left:50%;
+    transform:translate(-54%,-32%);
+}
+
+.image3 img {
+    position: absolute;
+    border-radius: 10px;
+    top:50%;
+    left:50%;
+    transform:translate(-80%,-32%);
+}
+
+
+
+.content {
+    margin:20px;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+
+/*FORMULÁRIO*/
+
+.box {
+   
+    background-image: linear-gradient(43deg, #0080ed 0%, #770101 46%, #064685 100%);
+    width: 600px;
+    height: 530px;
+    display: flex;
+    margin: 55px auto 10px auto;
+    border-radius: 25px;
+    flex-direction: column;
+    
+}
+
+.form1 {
+    
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    max-width: 980px;
+    height: 400px;
+    width: 350px;
+    align-items: center;
+    margin:auto;
+    max-width: 980px;
+    background-color: rgba(7, 10, 9, 0.5);
+
+
+}
+
+.contactus h1 {
+    margin-top: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+
+.form1 input {
+    display: flex;
+    width: 320px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 20px;
+    border:2px solid #064685;
+}
+
+.form1 textarea{
+    display: flex;
+    width: 320px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 150px;
+    border-radius: 20px;
+    border:2px solid #064685;
+    font-family:'Source Sans Pro', sans-serif;
+    padding-top: 10px;
+
+}
+
+.form1 [type="submit"]{
+    justify-content: center;
+    background-color:rgba(119, 1, 1);
+    color: white;
+    margin-top: 15px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img{
+
+    width: 150px;
+    margin-top: -75px;
+    margin-bottom: -20px;
+
+    
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    height: 420px;
+    width: 370px;
+    align-items: center;
+    margin:auto;
+    background-image: linear-gradient(90deg, #0080ed 0%, #499e65 46%, #064685 100%);
+    box-shadow: 3px 3px 2px 1px rgba(0,0,0,0.5); 
+}
+
+.form1 [type="submit"]:hover {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    
 }
